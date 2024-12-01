@@ -1,0 +1,10 @@
+cradle:
+  stack:
+    - path: "./src"
+      component: "adventOfCode2024:lib"
+
+    - path: "./app/Day1.hs"
+      component: "adventOfCode2024:exe:day1"
+
+    - path: "./test"
+      component: "adventOfCode2024:test:adventOfCode2024-test"
