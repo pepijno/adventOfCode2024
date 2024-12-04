@@ -41,6 +41,7 @@ dependencies:
 - matrix
 - NumInstances
 - parallel
+- regex-tdfa
 
 library:
   source-dirs: src
@@ -57,6 +58,9 @@ _exe-defs: &exe-defaults
   - -with-rtsopts=-N
 
 executables:
+  day3:
+    main: Day3.hs
+    <<: *exe-defaults
   day2:
     main: Day2.hs
     <<: *exe-defaults

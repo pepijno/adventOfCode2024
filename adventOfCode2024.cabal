@@ -56,6 +56,7 @@ library
     , parallel
     , parsec
     , pqueue
+    , regex-tdfa
     , split
     , text
     , timeit
@@ -93,6 +94,7 @@ executable day1
     , parallel
     , parsec
     , pqueue
+    , regex-tdfa
     , split
     , text
     , timeit
@@ -130,6 +132,45 @@ executable day2
     , parallel
     , parsec
     , pqueue
+    , regex-tdfa
+    , split
+    , text
+    , timeit
+    , unordered-containers
+    , vector
+  default-language: Haskell2010
+
+executable day3
+  main-is: Day3.hs
+  hs-source-dirs:
+      app
+  default-extensions:
+      NumericUnderscores
+      TypeApplications
+      LambdaCase
+      FlexibleContexts
+      TupleSections
+  ghc-options: -O2 -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      NumInstances
+    , adjunctions
+    , adventOfCode2024
+    , array
+    , base >=4.7 && <5
+    , bytestring
+    , comonad
+    , containers
+    , distributive
+    , extra
+    , hashable
+    , matrix
+    , mtl
+    , multiset
+    , ordered-containers
+    , parallel
+    , parsec
+    , pqueue
+    , regex-tdfa
     , split
     , text
     , timeit
@@ -168,6 +209,7 @@ test-suite adventOfCode2024-test
     , parallel
     , parsec
     , pqueue
+    , regex-tdfa
     , split
     , text
     , timeit
